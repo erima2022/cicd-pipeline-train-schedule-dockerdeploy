@@ -15,8 +15,8 @@ pipeline {
             steps {
                 script {
                     app = docker.build("erima21/train-schedule")
-                    app.inside {
-                        sh 'echo $(curl localhost:80)'
+                    // app.inside {
+                    //     sh 'echo $(curl localhost:80)'
                     }
                 }
             }
