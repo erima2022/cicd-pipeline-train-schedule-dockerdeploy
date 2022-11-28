@@ -16,7 +16,6 @@ pipeline {
                 script {
                     app = docker.build("erima21/train-schedule")
                     }
-                }
             }
         }
         stage('Push Docker Image') {
